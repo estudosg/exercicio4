@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação de Matrizes de Grafos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Transformar Matriz de Incidência para Matriz de Adjacência</h2>
+        <h3>Matriz de Incidência</h3>
+        <div class="input-section">
+            <textarea id="matriz-incidencia" placeholder="Digite a matriz de incidência separada por espaços e linhas. Ex.:&#10;1 0 0&#10;0 1 0&#10;0 0 1"></textarea>
+            <div class="buttons">
+                <button onclick="transformarMatriz()">Transformar</button>
+                <button onclick="limparCampos()">Limpar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <h3>Matriz de Adjacência</h3>
+            <pre id="matriz-adjacencia"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
